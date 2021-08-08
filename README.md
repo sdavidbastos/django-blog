@@ -1,12 +1,10 @@
 # Blog
 
 ## Dependencias
-- docker
-- docker-compose
+    - docker
+    - docker-compose
 
-## Start
-
-### Na pasta do projeto execute os seguintes comandos:
+## Na pasta do projeto execute os seguintes comandos no terminal
 
 ```docker
  docker volume create django-blog-pgdata
@@ -15,6 +13,15 @@
 ```docker-compose
  docker-compose up
 ```
-```docker-compose
- docker-compose run app django-admin start-project django_blog .
-```
+
+## Acesso
+
+### Banco de Dados
+    - POSTGRES_DB=django_blog
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=root
+
+### Pg ADMIN
+    - PGADMIN_DEFAULT_EMAIL=admin@user.com
+    - PGADMIN_DEFAULT_PASSWORD=1234 
+
